@@ -1,0 +1,34 @@
+### Health check
+GET http://localhost:3333/api/health
+
+
+### Index
+GET http://localhost:3333/api
+
+### Todo
+GET http://localhost:3333/api/todo
+
+### Push Task
+POST http://localhost:3333/api/todo
+Content-Type: application/json
+
+{
+    "id" : 1,
+    "task" : "Make a project"
+}
+
+### Update Task
+PUT http://localhost:3333/api/todo/update/1
+Content-Type: application/json
+
+{
+    "id" : 1
+}
+
+### Delete Task
+DELETE http://localhost:3333/api/todo/delete/1
+Content-Type: application/json
+
+{
+    "id" : 1
+}

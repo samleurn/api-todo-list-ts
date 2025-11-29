@@ -1,0 +1,11 @@
+### GET TASK ENDPOINTS
+GET http://localhost:3333/api/task
+
+### GET LIST
+GET http://localhost:3333/api/task/list
+
+### GET TASK INDIVIDUAL
+GET http://localhost:3333/api/task/1
+
+### POST TASK
+POST 

@@ -1,0 +1,47 @@
+### GET FOLDERS
+GET http://localhost:3333/api/folder
+
+### GET FOLDER INDIVIDUAL
+GET http://localhost:3333/api/folder/69e99c3b-7595-4832-8c92-ea154fb3eaea
+
+### POST FOLDER
+POST http://localhost:3333/api/folder
+Content-Type: application/json
+
+{
+    "name": "Folder 4"
+}
+
+### PUT FOLDER
+PUT http://localhost:3333/api/folder/69e99c3b-7595-4832-8c92-ea154fb3eaea
+Content-Type: application/json
+
+{
+    "token":"dual",
+    "name": "Folder 1",
+    "favorite": false
+}
+
+# {
+#     "token":"fav",
+#     "favorite": false
+# }
+
+# {
+#     "token":"name",
+#     "name": "Folder 4"
+# }
+
+### DELETE FOLDER
+DELETE http://localhost:3333/api/folder/61167ea7-ff6a-4cc9-b65c-04180b646021
+
+### RESTORE FOLDER
+GET http://localhost:3333/api/folder/restore
+
+### RESTORE FOLDER
+POST http://localhost:3333/api/folder/restore
+Content-Type: application/json
+
+{
+    "uuid" : "61167ea7-ff6a-4cc9-b65c-04180b646021"
+}
