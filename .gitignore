@@ -1,0 +1,8 @@
+# folders
+node_modules/
+
+# files
+.env
+notes.*
+new/
+backup/
