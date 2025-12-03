@@ -1,0 +1,57 @@
+### Health Checking
+GET http://localhost:3333/api/health
+
+### GET TASK
+GET http://localhost:3333/api/task
+
+### GET TASK INDIVIDUAL
+GET http://localhost:3333/api/task/dd10cb3d-3ada-4ed6-bdf6-fe96ad69646f
+
+### POST TASK
+POST http://localhost:3333/api/task
+Content-Type: application/json
+
+{
+    "name": "task 1",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+}
+
+### PUT TASK
+PUT http://localhost:3333/api/task/dd10cb3d-3ada-4ed6-bdf6-fe96ad69646f
+Content-Type: application/json
+
+{
+    "token":"all",
+    "name": "I'm a task",
+    "description": "Task you are a task!",
+    "favorite": true
+}
+
+# {
+#     "token":"favorite",
+#     "favorite": false
+# }
+
+# {
+#     "token":"description",
+#     "favorite": "You're not a good task!"
+# }
+
+# {
+#     "token":"name",
+#     "name": "Task 4"
+# }
+
+### DELETE TASK
+DELETE http://localhost:3333/api/task/dd10cb3d-3ada-4ed6-bdf6-fe96ad69646f
+
+### RESTORE TASK
+GET http://localhost:3333/api/task/restore
+
+### RESTORE TASK
+POST http://localhost:3333/api/task/restore
+Content-Type: application/json
+
+{
+    "uuid" : "61167ea7-ff6a-4cc9-b65c-04180b646021"
+}
