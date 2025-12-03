@@ -1,0 +1,22 @@
+{
+  "name": "api-todo-list-ts",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun --watch ./src/server"
+  },
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.13",
+    "@types/bun": "latest",
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.10.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "postgres": "^3.4.7"
+  }
+}
